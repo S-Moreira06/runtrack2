@@ -1,5 +1,5 @@
 <?php 
-    $nbr = 1;
+    $nbr = 0;
 ?>
 
 
@@ -15,8 +15,14 @@
    <?php 
         while($nbr <= 1337)
         {
-            echo $nbr."<br>";
             $nbr++;
+            if ($nbr == 42) {
+                echo "<b><u>".$nbr."</b></u>"."<br>";
+                
+            }
+            elseif ($nbr <= 1337) {
+                echo $nbr."<br>";
+            }
         }
     ?>
     
