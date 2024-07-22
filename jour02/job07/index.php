@@ -8,7 +8,7 @@
 
     while($ligne1 != 6){
         if ($ligne1 < 4){
-            echo "*";
+            echo "&nbsp ";
             $ligne1++;
         }
         elseif ($ligne1==4){
@@ -23,7 +23,7 @@
     
     while($ligne2 != 7){
         if ($ligne2 < 3){
-            echo "*";
+            echo "&nbsp ";
             $ligne2++;
         }
         elseif ($ligne2 == 3){
@@ -31,7 +31,7 @@
             $ligne2++;
         }
         elseif ($ligne2 >= 4 && $ligne2 <=5){
-            echo "*";
+            echo "&nbsp ";
             $ligne2++;
         }
         elseif ($ligne2==6){
@@ -41,7 +41,7 @@
     };
     while($ligne3 != 8){
         if($ligne3 < 2){
-            echo "*";
+            echo "&nbsp ";
             $ligne3++;   
         }
         elseif ($ligne3 == 2){
@@ -49,7 +49,7 @@
             $ligne3++;
         }
         elseif ($ligne3 >= 3 && $ligne3 <= 6){
-            echo "*";
+            echo "&nbsp ";
             $ligne3++;   
         }
         elseif ($ligne3 == 7){
@@ -59,7 +59,7 @@
     }
     while($ligne4 != 9){
             if($ligne4 < 1){
-                echo "*";
+                echo "&nbsp ";
                 $ligne4++;   
             }
             elseif ($ligne4 == 1){
@@ -67,7 +67,7 @@
                 $ligne4++;
             }
             elseif ($ligne4 >= 2 && $ligne4 <= 7){
-                echo "*";
+                echo "&nbsp ";
                 $ligne4++;   
             }
             elseif ($ligne4 == 8){
@@ -91,12 +91,6 @@
     }
     
 ?>  
-1234/\
-123/56\
-12/4567\
-1/234578\
-/23456789\
-__________
 
 
    

@@ -3,8 +3,35 @@
     $myInteger = 8;
     $myString = "Un super texte";
     $myFloat = 3.14;
-    $myArray = array($myBool, $myInteger, $myString, $myFloat);
-    var_dump($myArray);
+    $monTableau = [
+        [
+            "Type" => "Integer",
+            "prenom" => "Nombre entier",
+            "Valeur" => "$myInteger"            
+        ],
+        [
+            "Type" => "Boolean",
+            "prenom" => "Booléen",
+            "Valeur" => "$myBool"            
+        ],
+        [
+            "Type" => "String",
+            "prenom" => "Chaine de caractères",
+            "Valeur" => "$myString"            
+        ],
+        [
+            "Type" => "Float",
+            "prenom" => "Nombre décimal",
+            "Valeur" => "$myFloat"            
+        ],
+        [
+            "Type" => "Integer",
+            "prenom" => "Nombre entier",
+            "Valeur" => "$myInteger"            
+        ]
+    ];
+        print_r ($monTableau);
+        
     
 ?>
 
