@@ -2,15 +2,18 @@
 
 
 function gras($str){
-    if ( isset($_GET['str']) && isset($_GET['fonction'])){
+    $result = '';
+    {
         $strmax = strlen($str);
         for ($i=0 ; $i!=$strmax ; $i++){
-            if ($str[$i] == 'A' || $str[$i] == 'B' || $str[$i] == 'C' || $str[$i] == 'D' || $str[$i] == 'E' || $str[$i] == 'F' || $str[$i] == 'G' || $str[$i] == 'H' || $str[$i] == 'I' || $str[$i] == 'J' || $str[$i] == 'K' || $str[$i] == 'L' || $str[$i] == 'M' || $str[$i] == 'N' || $str[$i] == 'O' || $str[$i] == 'P' || $str[$i] == 'Q' || $str[$i] == 'R' || $str[$i] == 'S' || $str[$i] == 'T' || $str[$i] == 'U' || $str[$i] == 'V' || $str[$i] == 'W' || $str[$i] == 'X' || $str[$i] == 'Y' || $str[$i] == 'Z'){
-                 substr_replace($str[$i],'<b>'.$str[$i].'</b>',0);
+            $a = $str[$i];
+            if (ctype_upper($a)){
+                $result .= '<b>' . $a . '</b>';
             }
-        }
+        };
+        $result = $str;
     }
-    return $str;
+    return $result;
 }
 function cesar($str, $decalage = 2){
     if ( isset($_GET['str']) && isset($_GET['fonction'])){
